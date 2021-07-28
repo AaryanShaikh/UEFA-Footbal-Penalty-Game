@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+    background-image: url(assets/bg.jpg);
+    background-size: cover;
+}
+.container{
+    height: 99.2vh;
+    width: 99.6vw;
+    border: 1px solid transparent;
+    position: relative;
+}
+.final{
+    border: 1px solid transparent;
+    width: 43%;
+    height: 50%;
+    position: relative;
+    left: 27%;
+}
+.match1{
+    border: 1px solid transparent;
+    height: 49%;
+    width: 48%;
+    position: relative;
+}
+.match2{
+    border: 1px solid transparent;
+    height: 49%;
+    width: 48%;
+    position: absolute;
+    right: 0.1%;
+    top: 50.3%;
+}
+:is(.match1,.match2,.final) .club1{
+    height: 80%;
+    width: 30%;
+    position: absolute;
+    left: 6%;
+    top: 10%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #83a4d4, #b6fbff);
+    border-radius: 11px;
+    box-shadow: 0px 0px 20px 4px rgb(0 0 0 / 68%);
+}
+:is(.match1,.match2,.final) .club2{
+    height: 80%;
+    width: 30%;
+    position: absolute;
+    right: 6%;
+    top: 10%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #83a4d4, #b6fbff);
+    border-radius: 11px;
+    box-shadow: 0px 0px 20px 4px rgb(0 0 0 / 68%);
+}
+:is(.match1,.match2,.final) button{
+    position: absolute;
+    left: 41%;
+    top: 71%;
+    height: 72px;
+    width: 125px;
+    text-transform: capitalize;
+    font-size: x-large;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 9px 2px rgb(0 0 0 / 63%), inset 0px 0px 20px 7px rgb(0 0 0 / 65%);
+    border-radius: 8px;
+    background: springgreen;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgb(0 0 0);
+    transition: .5s ease;
+}
+:is(.club1,.club2) img{
+    height: 60%;
+    transition: .5s ease;
+}
+.goals{
+    display: flex;
+}
+:is(.club1,.club2) span{
+    border: 4px solid black;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: inset 0px 0px 10px 1px rgb(0 0 0 / 89%);
+    transition: .5s ease;
+}
+.res{
+    position: absolute;
+    height: 100px;
+    width: 165px;
+    font-size: xx-large;
+    left: 38%;
+    top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: transparent;
+    box-shadow: 0 0 16px 5px rgb(0 0 0 / 60%);
+    backdrop-filter: blur(1.3px);
+    border-radius: 9px;
+    color: white;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 4px rgb(0 0 0);
+    transition: .5s ease;
+}
+:is(.club1,.club2) h2{
+    text-transform: capitalize;
+    text-shadow: 1px 0px 2px rgb(0 0 0 / 73%);
+    transition: .5s ease;
+}
+.hide{
+    opacity: 0;
+    transition: .5s ease;
+}
+.show{
+    opacity: 1;
+    transition: .5s ease;
+}
+#confetii{
+    position: fixed;
+    top: 0;
+}

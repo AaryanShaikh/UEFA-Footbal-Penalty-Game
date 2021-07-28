@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penalty Shoots</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="final hide" id="final">
+            <div class="club1">
+                <img src="" alt="" id="fc1img">
+                <h2 id="fc1name"></h2>
+                <div class="goals" id="fgoals1">
+                    <span></span><span></span><span></span><span></span><span></span>
+                </div>
+            </div>
+            <div class="club2">
+                <img src="" alt="" id="fc2img">
+                <h2 id="fc2name"></h2>
+                <div class="goals" id="fgoals2">
+                    <span></span><span></span><span></span><span></span><span></span>
+                </div>
+            </div>
+            <button id="fbtn" onclick="shoot3()"></button>
+            <div class="res hide" id="fres"></div>
+        </div>
+        <div class="match1">
+            <div class="club1">
+                <img src="" alt="" id="c1img">
+                <h2 id="c1name"></h2>
+                <div class="goals" id="goals1">
+                    <span></span><span></span><span></span><span></span><span></span>
+                </div>
+            </div>
+            <div class="club2">
+                <img src="" alt="" id="c2img">
+                <h2 id="c2name"></h2>
+                <div class="goals" id="goals2">
+                    <span></span><span></span><span></span><span></span><span></span>
+                </div>
+            </div>
+            <button id="m1btn" onclick="shoot1()">club 1 shoot</button>
+            <div id="m1res" class="res hide"></div>
+        </div>
+        <div class="match2">
+            <div class="club1">
+                <img src="" alt="" id="c3img">
+                <h2 id="c3name"></h2>
+                <div class="goals" id="goals3">
+                    <span></span><span></span><span></span><span></span><span></span>
+                </div>
+            </div>
+            <div class="club2">
+                <img src="" alt="" id="c4img">
+                <h2 id="c4name"></h2>
+                <div class="goals" id="goals4">
+                    <span></span><span></span><span></span><span></span><span></span>
+                </div>
+            </div>
+            <button class="hide" id="m2btn" onclick="shoot2()"></button>
+            <div class="res hide" id="m2res"></div>
+        </div>
+    </div>
+    <canvas id="confetii"></canvas>
+    <script src="index.min.js"></script>
+    <script src="script.js"></script>   
+</body>
+</html>
